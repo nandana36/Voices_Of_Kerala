@@ -1,0 +1,35 @@
+# API Keys and Secrets
+.streamlit/secrets.toml
+*.env
+.env
+
+# Data files (will be recreated on server)
+malayalam_data/
+*.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Audio files (temporary)
+temp_*.wav
+*.wav
