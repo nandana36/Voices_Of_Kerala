@@ -969,7 +969,7 @@ def main_page():
                  st.success("✅ Audio recorded!")        
             
             
-            if len(audio) > 0:
+            if audio_file is not None:
                 # Show the recorded audio for playback
                 st.audio(audio.export().read(), format="audio/wav")
                 
