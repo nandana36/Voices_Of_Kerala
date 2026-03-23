@@ -835,6 +835,13 @@ def display_result(result: Dict, context="main"):
                     st.caption(f"🔇 Audio: {error[:50]}")
         
         st.markdown('</div>', unsafe_allow_html=True)
+    if 'source' in result:
+        if result['source'] == 'retrieval':
+            st.success("✅ Instant retrieval")
+        elif result['source'] == 'fuzzy_retrieval':
+            st.success("✅ Fuzzy match")
+        elif result['source'] == 'llm_validated':
+            st.info("🤖 AI-powered")
     
 
 
