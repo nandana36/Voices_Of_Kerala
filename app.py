@@ -836,7 +836,7 @@ def display_result(result: Dict, context="main"):
         
         st.markdown('</div>', unsafe_allow_html=True)
         
-        //SOURCE CHECKING 
+    # SOURCE CHECKING 
     # if 'source' in result:
     #     if result['source'] == 'retrieval':
     #         st.success("✅ Instant retrieval")
