@@ -37,7 +37,7 @@ class Config:
     ADMIN_PASSWORD_HASH = "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"  # "password"
     
     # Sarvam AI Configuration
-    SARVAM_API_KEY = "sk_13tfi3fc_ueGkE5DC8bCBfjtSl2eCgSIT"  # Hardcoded - works for STT and TTS
+   Config.SARVAM_API_KEY = st.secrets["SARVAM_API_KEY"]
 
 # ============================================================================
 # PAGE SETUP
