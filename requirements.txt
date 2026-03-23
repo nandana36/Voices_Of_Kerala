@@ -7,3 +7,4 @@ google-generativeai
 fuzzywuzzy
 python-Levenshtein
 pillow
+SpeechRecognition
