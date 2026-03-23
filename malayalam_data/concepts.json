@@ -1,0 +1,312 @@
+{
+  "tapioca": {
+    "english": "Tapioca",
+    "south": [
+      "കപ്പ"
+    ],
+    "central": [
+      "കൊള്ളി"
+    ],
+    "north": [
+      "പൂള"
+    ]
+  },
+  "papaya": {
+    "english": "Papaya",
+    "south": [
+      "ഒമക്കായ"
+    ],
+    "central": [
+      "കപ്പളങ്ങ"
+    ],
+    "north": [
+      "കർമ്മൂസ"
+    ]
+  },
+  "watermelon": {
+    "english": "Watermelon",
+    "south": [
+      "തണ്ണിമത്തങ്ങ"
+    ],
+    "central": [
+      "തണ്ണിമത്തന്‍"
+    ],
+    "north": [
+      "ബത്തക്ക"
+    ]
+  },
+  "guava": {
+    "english": "Guava",
+    "south": [
+      "പേരയ്ക്ക"
+    ],
+    "central": [
+      "മലയ്ക്ക"
+    ],
+    "north": [
+      "കൊയ്യാക്ക"
+    ]
+  },
+  "banana": {
+    "english": "Banana",
+    "south": [
+      "പഴം"
+    ],
+    "central": [
+      "ഏത്തപ്പഴം"
+    ],
+    "north": [
+      "നേന്ത്രപ്പഴം"
+    ]
+  },
+  "ivy_gourd": {
+    "english": "Ivy Gourd",
+    "south": [
+      "കോവക്ക"
+    ],
+    "central": [
+      "കോവക്ക"
+    ],
+    "north": [
+      "കോവക്ക"
+    ]
+  },
+  "onion_big": {
+    "english": "Onion Big",
+    "south": [
+      "സവാള"
+    ],
+    "central": [
+      "സവാള"
+    ],
+    "north": [
+      "വല്ല്യുള്ളി"
+    ]
+  },
+  "cashew_fruit": {
+    "english": "Cashew Fruit",
+    "south": [
+      "കശുമാങ്ങ"
+    ],
+    "central": [
+      "പറങ്കിമാങ്ങ"
+    ],
+    "north": [
+      "പറങ്കിമാങ്ങ"
+    ]
+  },
+  "small_onion": {
+    "english": "Small Onion",
+    "south": [
+      "ചെറിയുള്ളി"
+    ],
+    "central": [
+      "ചെറിയുള്ളി"
+    ],
+    "north": [
+      "ചുവന്നുള്ളി"
+    ]
+  },
+  "bottle_gourd": {
+    "english": "Bottle Gourd",
+    "south": [
+      "ചുരയ്ക്ക"
+    ],
+    "central": [
+      "ചുരയ്ക്ക"
+    ],
+    "north": [
+      "ചുരങ്ങ"
+    ]
+  },
+  "pumpkin": {
+    "english": "Pumpkin",
+    "south": [
+      "മത്തങ്ങ"
+    ],
+    "central": [
+      "മത്തൻ"
+    ],
+    "north": [
+      "മത്തൻ"
+    ]
+  },
+  "cucumber": {
+    "english": "Cucumber",
+    "south": [
+      "വെള്ളരിക്ക"
+    ],
+    "central": [
+      "വെള്ളരിക്ക"
+    ],
+    "north": [
+      "കക്കരിക്ക"
+    ]
+  },
+  "peanut": {
+    "english": "Peanut",
+    "south": [
+      "കപ്പലണ്ടി"
+    ],
+    "central": [
+      "നിലക്കടല"
+    ],
+    "north": [
+      "കടല"
+    ]
+  },
+  "breadfruit": {
+    "english": "Breadfruit",
+    "south": [
+      "ശീമച്ചക്ക"
+    ],
+    "central": [
+      "കടച്ചക്ക"
+    ],
+    "north": [
+      "കടച്ചക്ക"
+    ]
+  },
+  "bitter_gourd": {
+    "english": "Bitter Gourd",
+    "south": [
+      "പാവയ്ക്ക"
+    ],
+    "central": [
+      "കൈപ്പയ്ക്ക"
+    ],
+    "north": [
+      "കൈപ്പയ്ക്ക"
+    ]
+  },
+  "garlic": {
+    "english": "Garlic",
+    "south": [
+      "വെളുത്തുള്ളി"
+    ],
+    "central": [
+      "വെളുത്തുള്ളി"
+    ],
+    "north": [
+      "വെള്ളുള്ളി"
+    ]
+  },
+  "pomelo": {
+    "english": "Pomelo",
+    "south": [
+      "ബംബ്ലിമാസ്"
+    ],
+    "central": [
+      "കമ്പിളി നാരങ്ങ"
+    ],
+    "north": [
+      "ബബ്ലൂസ് നാരങ്ങ"
+    ]
+  },
+  "bilimbi": {
+    "english": "Bilimbi",
+    "south": [
+      "പുളിഞ്ചിക്ക"
+    ],
+    "central": [
+      "ഇരുമ്പൻപുളി"
+    ],
+    "north": [
+      "പുളിഞ്ചിക്ക"
+    ]
+  },
+  "custard_apple": {
+    "english": "Custard Apple",
+    "south": [
+      "സീതപ്പഴം"
+    ],
+    "central": [
+      "ആത്തച്ചക്ക"
+    ],
+    "north": [
+      "ആത്തച്ചക്ക"
+    ]
+  },
+  "pomegranate": {
+    "english": "Pomegranate",
+    "south": [
+      "മാതളനാരങ്ങ"
+    ],
+    "central": [
+      "മാതളനാരങ്ങ"
+    ],
+    "north": [
+      "ഉറുമാമ്പഴം"
+    ]
+  },
+  "chilli": {
+    "english": "Chilli",
+    "south": [
+      "മുളക്"
+    ],
+    "central": [
+      "മുളക്"
+    ],
+    "north": [
+      "മുളക്"
+    ]
+  },
+  "coconut": {
+    "english": "coconut",
+    "south": [
+      "തേങ്ങ",
+      "നാളികേരം"
+    ],
+    "central": [
+      "തേങ്ങ",
+      "നാളികേരം"
+    ],
+    "north": [
+      "തേങ്ങ",
+      "കായി"
+    ]
+  },
+  "apple": {
+    "english": "apple",
+    "south": [
+      "ആപ്പിൾ",
+      "സീമപ്പഴം"
+    ],
+    "central": [
+      "ആപ്പിൾ"
+    ],
+    "north": [
+      "ആപ്പിൾ"
+    ]
+  },
+  "orange": {
+    "english": "orange",
+    "south": [
+      "ഓറഞ്ച്",
+      "കമലാനാരങ്ങ"
+    ],
+    "central": [
+      "ഓറഞ്ച്",
+      "മധുരനാരങ്ങ"
+    ],
+    "north": [
+      "ഓറഞ്ച്",
+      "സന്ത്ര"
+    ]
+  },
+  "curry_leaves": {
+    "english": "curry leaves",
+    "south": [
+      "കറിവേപ്പില",
+      "കറിവേപ്പ്"
+    ],
+    "central": [
+      "കറിവേപ്പില",
+      "വേപ്പില"
+    ],
+    "north": [
+      "കരിവേപ്പില",
+      "വേപ്പില"
+    ]
+  }
+}

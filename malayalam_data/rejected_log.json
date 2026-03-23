@@ -1,0 +1,69 @@
+{
+  "കാർമോസ": {
+    "data": {
+      "english": "Papaya",
+      "south": [
+        "ഒമക്കായ",
+        "കപ്പങ്ങ"
+      ],
+      "central": [
+        "കപ്പളങ്ങ",
+        "പപ്പായ"
+      ],
+      "north": [
+        "കാർമൂസ",
+        "കർമൂസ"
+      ],
+      "food_type": "fruit",
+      "source": "llm_generated",
+      "timestamp": "2026-03-22T15:38:44.337767"
+    },
+    "rejected_date": "2026-03-22T15:39:38.408351",
+    "reason": "Admin rejected"
+  },
+  "അവലോ സുണ്ട.": {
+    "data": {
+      "english": "Avalose Unda (Roasted Rice Flour Balls)",
+      "south": [
+        "അവലോസുണ്ട",
+        "പൊടിയുണ്ട"
+      ],
+      "central": [
+        "അവലോസുണ്ട",
+        "ഉണ്ട"
+      ],
+      "north": [
+        "അവലോസുണ്ട"
+      ],
+      "food_type": "dish",
+      "source": "llm_generated",
+      "timestamp": "2026-03-22T13:46:41.503887"
+    },
+    "rejected_date": "2026-03-22T15:39:44.131274",
+    "reason": "Admin rejected"
+  },
+  "പൊമ്മക്കായ.": {
+    "data": {
+      "english": "Papaya",
+      "south": [
+        "ഒമക്കായ",
+        "പൊമ്മക്കായ",
+        "കപ്പങ്ങ"
+      ],
+      "central": [
+        "കപ്പളങ്ങ",
+        "പപ്പായ"
+      ],
+      "north": [
+        "കർമൂസ",
+        "കപ്പങ്ങ",
+        "പപ്പായ"
+      ],
+      "food_type": "fruit",
+      "source": "llm_generated",
+      "timestamp": "2026-03-22T20:05:16.260331"
+    },
+    "rejected_date": "2026-03-22T20:08:12.423080",
+    "reason": "Admin rejected"
+  }
+}

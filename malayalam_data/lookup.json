@@ -1,0 +1,233 @@
+{
+  "കപ്പ": {
+    "region": "south",
+    "concept": "tapioca"
+  },
+  "കൊള്ളി": {
+    "region": "central",
+    "concept": "tapioca"
+  },
+  "പൂള": {
+    "region": "north",
+    "concept": "tapioca"
+  },
+  "ഒമക്കായ": {
+    "region": "south",
+    "concept": "papaya"
+  },
+  "കപ്പളങ്ങ": {
+    "region": "central",
+    "concept": "papaya"
+  },
+  "കർമ്മൂസ": {
+    "region": "north",
+    "concept": "papaya"
+  },
+  "തണ്ണിമത്തങ്ങ": {
+    "region": "south",
+    "concept": "watermelon"
+  },
+  "തണ്ണിമത്തന്‍": {
+    "region": "central",
+    "concept": "watermelon"
+  },
+  "ബത്തക്ക": {
+    "region": "north",
+    "concept": "watermelon"
+  },
+  "പേരയ്ക്ക": {
+    "region": "south",
+    "concept": "guava"
+  },
+  "മലയ്ക്ക": {
+    "region": "central",
+    "concept": "guava"
+  },
+  "കൊയ്യാക്ക": {
+    "region": "north",
+    "concept": "guava"
+  },
+  "പഴം": {
+    "region": "south",
+    "concept": "banana"
+  },
+  "ഏത്തപ്പഴം": {
+    "region": "central",
+    "concept": "banana"
+  },
+  "നേന്ത്രപ്പഴം": {
+    "region": "north",
+    "concept": "banana"
+  },
+  "കോവക്ക": {
+    "region": "north",
+    "concept": "ivy_gourd"
+  },
+  "സവാള": {
+    "region": "central",
+    "concept": "onion_big"
+  },
+  "വല്ല്യുള്ളി": {
+    "region": "north",
+    "concept": "onion_big"
+  },
+  "കശുമാങ്ങ": {
+    "region": "south",
+    "concept": "cashew_fruit"
+  },
+  "പറങ്കിമാങ്ങ": {
+    "region": "north",
+    "concept": "cashew_fruit"
+  },
+  "ചെറിയുള്ളി": {
+    "region": "central",
+    "concept": "small_onion"
+  },
+  "ചുവന്നുള്ളി": {
+    "region": "north",
+    "concept": "small_onion"
+  },
+  "ചുരയ്ക്ക": {
+    "region": "central",
+    "concept": "bottle_gourd"
+  },
+  "ചുരങ്ങ": {
+    "region": "north",
+    "concept": "bottle_gourd"
+  },
+  "മത്തങ്ങ": {
+    "region": "south",
+    "concept": "pumpkin"
+  },
+  "മത്തൻ": {
+    "region": "north",
+    "concept": "pumpkin"
+  },
+  "വെള്ളരിക്ക": {
+    "region": "central",
+    "concept": "cucumber"
+  },
+  "കക്കരിക്ക": {
+    "region": "north",
+    "concept": "cucumber"
+  },
+  "കപ്പലണ്ടി": {
+    "region": "south",
+    "concept": "peanut"
+  },
+  "നിലക്കടല": {
+    "region": "central",
+    "concept": "peanut"
+  },
+  "കടല": {
+    "region": "north",
+    "concept": "peanut"
+  },
+  "ശീമച്ചക്ക": {
+    "region": "south",
+    "concept": "breadfruit"
+  },
+  "കടച്ചക്ക": {
+    "region": "north",
+    "concept": "breadfruit"
+  },
+  "പാവയ്ക്ക": {
+    "region": "south",
+    "concept": "bitter_gourd"
+  },
+  "കൈപ്പയ്ക്ക": {
+    "region": "north",
+    "concept": "bitter_gourd"
+  },
+  "വെളുത്തുള്ളി": {
+    "region": "central",
+    "concept": "garlic"
+  },
+  "വെള്ളുള്ളി": {
+    "region": "north",
+    "concept": "garlic"
+  },
+  "ബംബ്ലിമാസ്": {
+    "region": "south",
+    "concept": "pomelo"
+  },
+  "കമ്പിളി നാരങ്ങ": {
+    "region": "central",
+    "concept": "pomelo"
+  },
+  "ബബ്ലൂസ് നാരങ്ങ": {
+    "region": "north",
+    "concept": "pomelo"
+  },
+  "പുളിഞ്ചിക്ക": {
+    "region": "north",
+    "concept": "bilimbi"
+  },
+  "ഇരുമ്പൻപുളി": {
+    "region": "central",
+    "concept": "bilimbi"
+  },
+  "സീതപ്പഴം": {
+    "region": "south",
+    "concept": "custard_apple"
+  },
+  "ആത്തച്ചക്ക": {
+    "region": "north",
+    "concept": "custard_apple"
+  },
+  "മാതളനാരങ്ങ": {
+    "region": "central",
+    "concept": "pomegranate"
+  },
+  "ഉറുമാമ്പഴം": {
+    "region": "north",
+    "concept": "pomegranate"
+  },
+  "വാഴപ്പഴം": {
+    "region": "south",
+    "concept": "banana"
+  },
+  "മുളക്": {
+    "region": "south",
+    "concept": "chilli"
+  },
+  "തേങ്ങ": {
+    "region": "south",
+    "concept": "coconut"
+  },
+  "ആപ്പിൾ": {
+    "region": "south",
+    "concept": "apple"
+  },
+  "ഓറഞ്ച്": {
+    "region": "south",
+    "concept": "orange"
+  },
+  "ആവിയ": {
+    "region": "south",
+    "concept": "cucumber"
+  },
+  "കറിവേപ്പില.": {
+    "region": "south",
+    "concept": "curry_leaves"
+  },
+  "മുരിങ്ങക്കോൽ.": {
+    "english": "Drumstick",
+    "south": [
+      "മുരിങ്ങക്ക",
+      "മുരിങ്ങക്കോൽ"
+    ],
+    "central": [
+      "മുരിങ്ങക്ക",
+      "മുരിങ്ങക്കോൽ"
+    ],
+    "north": [
+      "മുരിങ്ങക്കായ",
+      "മുരിങ്ങക്ക"
+    ],
+    "food_type": "vegetable",
+    "source": "admin_approved",
+    "timestamp": "2026-03-22T12:45:50.672142",
+    "approved_date": "2026-03-22T12:48:15.948193"
+  }
+}

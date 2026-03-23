@@ -1,0 +1,22 @@
+{
+  "vok_VVAYXyiK0pRiv2zjVR8xeQd2ZCnxEj-17qPPhC_A5A4": {
+    "user_email": "aro@gmail.com",
+    "user_name": "xia",
+    "tier": "free",
+    "created_date": "2026-03-21T00:45:19.087483",
+    "status": "active",
+    "usage_count": 0,
+    "last_used": null,
+    "rate_limit": 10,
+    "daily_limit": 100
+  },
+  "vok_lMAdxYGlYLH1Gu4wFZGMZ1HIYhZNSz26bmIHretFwdg": {
+    "user_email": "aro@gmail.com",
+    "user_name": "xia",
+    "key_name": "Proj1",
+    "created_date": "2026-03-21T23:23:49.924444",
+    "status": "active",
+    "usage_count": 0,
+    "last_used": null
+  }
+}
