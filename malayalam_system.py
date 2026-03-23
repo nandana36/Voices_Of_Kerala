@@ -41,7 +41,7 @@ class Config:
     FUZZY_MATCH_THRESHOLD = 0.7
     
     # LLM settings
-    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDTyfcxstMH4CSqCHxA6KGmezp2CT45IIs")
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
     GEMINI_MODEL = "gemini-flash-latest"  # Best model - works and accurate!
 
 
