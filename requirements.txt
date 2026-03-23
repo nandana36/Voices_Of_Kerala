@@ -2,9 +2,10 @@
 streamlit>=1.31.0
 requests>=2.31.0
 
-# Audio
-sounddevice>=0.4.6
-scipy>=1.11.4
+# Audio - browser-based recorder (works on Streamlit Cloud)
+streamlit-audiorecorder>=0.0.4
+
+# Speech Recognition
 SpeechRecognition>=3.10.0
 
 # AI
