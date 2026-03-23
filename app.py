@@ -11,7 +11,7 @@ Everything in one place:
 """
 
 import streamlit as st
-from audiorecorder import audiorecorder
+
 import requests
 import json
 import os
@@ -954,8 +954,13 @@ def main_page():
         
         with col1:
             st.markdown("**Click the mic button below to start recording. Click again to stop.**")
+            audio_file = st.audio_input("🎤 Record your voice")
+
+            if audio_file is not None:
+                 with open("temp.wav", "wb") as f:
+                          f.write(audio_file.read())    
+                 st.success("✅ Audio recorded!")        
             
-            audio = audiorecorder("🎤 Start Recording", "⏹️ Stop Recording")
             
             if len(audio) > 0:
                 # Show the recorded audio for playback
