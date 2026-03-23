@@ -10,6 +10,12 @@ Everything in one place:
 ✅ Word validation
 """
 
+import os
+import streamlit as st
+
+os.environ["SARVAM_API_KEY"] = st.secrets["SARVAM_API_KEY"]
+os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+
 import streamlit as st
 
 import requests
@@ -26,7 +32,7 @@ import numpy as np
 # ============================================================================
 # CONFIGURATION
 # ============================================================================
-
+import os
 class Config:
     DATA_DIR = "malayalam_data"
     VERIFIED_FILE = "lookup.json"
@@ -37,7 +43,8 @@ class Config:
     ADMIN_PASSWORD_HASH = "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"  # "password"
     
     # Sarvam AI Configuration
-    Config.SARVAM_API_KEY = st.secrets["SARVAM_API_KEY"]
+    
+    SARVAM_API_KEY = os.getenv("SARVAM_API_KEY")
 
 # ============================================================================
 # PAGE SETUP
