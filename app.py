@@ -11,8 +11,7 @@ Everything in one place:
 """
 
 import streamlit as st
-import sounddevice as sd
-from scipy.io.wavfile import write
+from audiorecorder import audiorecorder
 import requests
 import json
 import os
@@ -611,37 +610,21 @@ def process_word(word: str) -> Dict:
 # SARVAM AI RECORDING (from original app)
 # ============================================================================
 
-def record_with_sarvam(duration=5, api_key=None):
+def transcribe_with_sarvam(audio_bytes: bytes, api_key=None):
     """
-    Record audio and transcribe with Sarvam AI
+    Transcribe audio bytes with Sarvam AI
     95%+ accuracy for Malayalam!
     """
     
     if not api_key:
         return None, "❌ Sarvam AI API key not set"
     
+    if not audio_bytes or len(audio_bytes) == 0:
+        return None, "❌ No audio data received"
+    
     try:
-        # Record audio
-        fs = 16000
+        st.info("🚀 Transcribing...")
         
-        st.markdown("<div class='mic'>🎤</div>", unsafe_allow_html=True)
-        progress = st.empty()
-        progress.info(f"🔴 Recording for {duration} seconds... Speak clearly!")
-        
-        # Record
-        audio = sd.rec(int(duration * fs), samplerate=fs, channels=1, dtype='int16')
-        sd.wait()
-        
-        progress.empty()
-        st.info("💾 Saving audio...")
-        
-        # Save to temporary file
-        temp_file = "temp_sarvam.wav"
-        write(temp_file, fs, audio)
-        
-        st.info("🚀 Transcribing .......")
-        
-        # Transcribe with Sarvam API
         url = "https://api.sarvam.ai/speech-to-text"
         
         headers = {
@@ -649,7 +632,7 @@ def record_with_sarvam(duration=5, api_key=None):
         }
         
         files = {
-            "file": ("audio.wav", open(temp_file, "rb"), "audio/wav")
+            "file": ("audio.wav", audio_bytes, "audio/wav")
         }
         
         data = {
@@ -659,17 +642,8 @@ def record_with_sarvam(duration=5, api_key=None):
         
         response = requests.post(url, headers=headers, files=files, data=data)
         
-        # Cleanup
-        try:
-            os.remove(temp_file)
-        except:
-            pass
-        
-        # Check response
         if response.status_code == 200:
             result = response.json()
-            
-            # Extract transcript
             if 'transcript' in result:
                 return result['transcript'], None
             else:
@@ -678,12 +652,6 @@ def record_with_sarvam(duration=5, api_key=None):
             return None, f"❌ API error ({response.status_code}): {response.text}"
             
     except Exception as e:
-        # Cleanup on error
-        try:
-            os.remove(temp_file)
-        except:
-            pass
-        
         return None, f"❌ Error: {str(e)}"
 
 # ============================================================================
@@ -985,43 +953,48 @@ def main_page():
         col1, col2 = st.columns([1, 1])
         
         with col1:
-            recording_duration = st.slider("Recording Duration", 3, 10, 5)
+            st.markdown("**Click the mic button below to start recording. Click again to stop.**")
             
-            if st.button("🎤 Record  ", key="record_voice", type="primary", use_container_width=True):
-                # Record and transcribe
-                    transcript, error = record_with_sarvam(
-                        duration=recording_duration,
-                        api_key=st.session_state.sarvam_api_key
+            audio = audiorecorder("🎤 Start Recording", "⏹️ Stop Recording")
+            
+            if len(audio) > 0:
+                # Show the recorded audio for playback
+                st.audio(audio.export().read(), format="audio/wav")
+                
+                # Export to bytes and send to Sarvam
+                audio_bytes = audio.export(format="wav").read()
+                
+                transcript, error = transcribe_with_sarvam(
+                    audio_bytes=audio_bytes,
+                    api_key=st.session_state.sarvam_api_key
+                )
+                
+                if error:
+                    st.error(error)
+                elif transcript:
+                    # Show what was transcribed
+                    st.markdown(
+                        f"<div class='detected-word'>✅ Word Captured: {transcript}</div>",
+                        unsafe_allow_html=True
                     )
                     
-                    if error:
-                        st.error(error)
-                    elif transcript:
-                        # Show what was transcribed
-                        st.markdown(
-                            f"<div class='detected-word'>✅ Word Captured: {transcript}</div>",
-                            unsafe_allow_html=True
-                        )
-                        
-                        # Send ENTIRE transcript (don't split!)
-                        # Backend will handle multi-word phrases correctly
-                        final_word = transcript.strip()
-                        
-                        # Process FULL phrase
-                        result = process_word(final_word)
-                        
-                        # Add to history
-                        st.session_state.history.append({
-                            "input": f"Voice (Sarvam): {final_word}",
-                            "result": result,
-                            "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-                        })
-                        
-                        # Display result
-                        st.markdown("---")
-                        display_result(result, context="voice_tab")
-                    else:
-                        st.error("❌ No transcription received")
+                    final_word = transcript.strip()
+                    
+                    # Process full phrase
+                    result = process_word(final_word)
+                    
+                    # Add to history
+                    st.session_state.history.append({
+                        "input": f"Voice (Sarvam): {final_word}",
+                        "result": result,
+                        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+                    })
+                    
+                    # Display result
+                    st.markdown("---")
+                    display_result(result, context="voice_tab")
+                else:
+                    st.error("❌ No transcription received")
         
         with col2:
             st.markdown("""
