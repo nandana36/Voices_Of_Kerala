@@ -974,7 +974,7 @@ def main_page():
                 st.audio(audio_file)
                 
                 # Export to bytes and send to Sarvam
-                audio_bytes = audio.export(format="wav").read()
+                audio_bytes = audio_file.read()
                 
                 transcript, error = transcribe_with_sarvam(
                     audio_bytes=audio_bytes,
