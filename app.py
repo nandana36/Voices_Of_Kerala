@@ -971,7 +971,7 @@ def main_page():
             
             if audio_file is not None:
                 # Show the recorded audio for playback
-                st.audio(audio.export().read(), format="audio/wav")
+                st.audio(audio_file)
                 
                 # Export to bytes and send to Sarvam
                 audio_bytes = audio.export(format="wav").read()
